@@ -1,0 +1,19 @@
+{
+  "name": "json2sql",
+  "version": "1.0.0",
+  "description": "json file to rdbms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmyou/json2sql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmyou/json2sql/issues"
+  },
+  "homepage": "https://github.com/gmyou/json2sql#readme"
+}
