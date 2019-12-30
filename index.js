@@ -6,6 +6,11 @@ var contents = fs.readFileSync("skp.json");
 var jsonContents = JSON.parse(contents);
 
 function getCategory(data) {
+    /**
+     * @todo getDepth
+     */
+    // do something
+    
     if ( data.length == 0 ) {
         return false;
     }
@@ -16,7 +21,9 @@ function getCategory(data) {
             console.log('category.description', category.description);
             console.log('category.categories.length', category.categories.length);
 
-            getCategory(category.categories);
+            if ( category.categories.length>0 ) {
+                getCategory(category.categories);
+            }
         }
     });
 }
@@ -40,9 +47,6 @@ if  ( jsonContents.code == 200 ) {
 
             console.log('category.categories.length', category.categories.length);
 
-            /**
-             * @todo recursive
-             */
             if ( category.categories.length>0 ) {
                 getCategory(category.categories);
             }
